@@ -26,38 +26,36 @@ Every word is represented in a 100-dimensional feature space and the model is tr
 ## Testing the API
 
 1. Run the Flask API locally for testing. Go to directory with `app.py`
-> python app.py
+```bash 
+python app.py
+```
 
 This outputs
->  Serving Flask app "app" (lazy loading)
-  
-  Environment: production
-   
-   WARNING: Do not use the development server in a production environment.
-   
-   Use a production WSGI server instead.
-   
-   Debug mode: on
-   
-   Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-   
-   Restarting with stat
-   
-   Debugger is active!
-   
-   Debugger PIN: 154-300-115
-
+```bash
+  * Serving Flask app "app" (lazy loading)
+  * Environment: production
+  * WARNING: Do not use the development server in a production environment.
+  * Use a production WSGI server instead.
+  * Debug mode: on
+  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+  * Restarting with stat
+  * Debugger is active!
+  * Debugger PIN: 154-300-115
+```
 
 2. Using curl in a new terminal to make a GET request at the URL of the API
-> curl -X GET http://127.0.0.1:5000/spellCorrect -d query='sellection'
+```bash
+curl -X GET http://127.0.0.1:5000/spellCorrect -d query='sellection'
+```
 
 3. Example of successful output
-> {
+```bash
+{
     "prediction": [
         "selection"
     ]
 }
-
+```
 
 ## References
 - Peter Norvig's famous [blog post](https://norvig.com/spell-correct.html) on spelling correction
