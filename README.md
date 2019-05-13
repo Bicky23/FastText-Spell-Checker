@@ -1,6 +1,6 @@
 # SPELL CHECKER deployed as a REST API using Flask
 
-The project uses a deep learning based approach to suggest upto three correct recommendations for any given word. Peter Norvig's [blog](https://norvig.com/spell-correct.html) was a nice inspiration while building up the solution. However it was this [blog](https://blog.usejournal.com/a-simple-spell-checker-built-from-word-vectors-9f28452b6f26) that really made. 
+Classical probabilistic approaches have dominated spell checkings. This project uses a deep learning based approach to suggest upto three correct spelling recommendations for any given word.
 
 
 ## Dataset for training
@@ -29,15 +29,23 @@ Every word is represented in a 100-dimensional feature space and the model is tr
 > python app.py
 
 This outputs
-> * Serving Flask app "app" (lazy loading)
- * Environment: production
+>  Serving Flask app "app" (lazy loading)
+  
+  Environment: production
+   
    WARNING: Do not use the development server in a production environment.
+   
    Use a production WSGI server instead.
- * Debug mode: on
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 154-300-115
+   
+   Debug mode: on
+   
+   Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+   
+   Restarting with stat
+   
+   Debugger is active!
+   
+   Debugger PIN: 154-300-115
 
 
 2. Using curl in a new terminal to make a GET request at the URL of the API
@@ -50,6 +58,10 @@ This outputs
     ]
 }
 
+
+## References
+- Peter Norvig's famous [blog post](https://norvig.com/spell-correct.html) on spelling correction
+- A recent deep learning based approach for [spelling correction](https://blog.usejournal.com/a-simple-spell-checker-built-from-word-vectors-9f28452b6f26)
 
 
 
