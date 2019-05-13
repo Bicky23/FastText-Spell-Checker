@@ -1,0 +1,7 @@
+Flask_RESTful==0.3.7
+numpy==1.13.3
+lxml==4.3.0
+Flask==1.0.2
+pyenchant==2.0.0
+gensim==3.7.3
+nltk==3.4.1
